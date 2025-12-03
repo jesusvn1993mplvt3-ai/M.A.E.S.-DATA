@@ -1,0 +1,41 @@
+@media print {
+    .no-print { display: none !important; }
+    body { background: white !important; color: black !important; }
+    .report-page { 
+        margin: 0; 
+        padding: 10mm;
+        color: black !important;
+        background: white !important;
+        min-height: 297mm;
+    }
+}
+
+.custom-scrollbar::-webkit-scrollbar { height: 6px; width: 6px; }
+.custom-scrollbar::-webkit-scrollbar-track { background: #0f172a; }
+.custom-scrollbar::-webkit-scrollbar-thumb { background: #334155; border-radius: 4px; }
+.slot-input {
+    background: transparent; border: none; outline: none; text-align: center; width: 100%;
+    font-weight: bold; padding: 0; z-index: 1; position: relative;
+}
+.slot-input:focus { background: #1e293b; color: #60a5fa; }
+.slot-input::placeholder { color: #475569; font-weight: normal; font-size: 8px; }
+.password-mask { -webkit-text-security: disc; text-security: disc; }
+.fade-in { animation: fadeIn 0.3s ease-in-out; }
+@keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+@keyframes zoomIn { from { transform: scale(0.5); opacity: 0; } to { transform: scale(1); opacity: 1; } }
+.animate-zoom-in { animation: zoomIn 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275); }
+.machine-circle { transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); }
+.machine-circle.selected { transform: scale(1.1); box-shadow: 0 0 15px rgba(34, 197, 94, 0.6); }
+.planning-info { color: #facc15; background-color: rgba(120, 53, 15, 0.1); border-radius: 4px; padding: 1px 3px; font-weight: bold; font-size: 8px; }
+
+/* Estilos de Reporte */
+.report-page { background-color: #f8fafc; color: #1e293b; padding: 30px; font-family: sans-serif; }
+.report-header h1 { font-size: 24px; font-weight: bold; border-bottom: 2px solid #e2e8f0; padding-bottom: 5px; margin-bottom: 10px; }
+.report-section { margin-bottom: 20px; border: 1px solid #e2e8f0; padding: 15px; border-radius: 8px; }
+.report-section h2 { font-size: 18px; font-weight: bold; color: #1e40af; margin-bottom: 10px; }
+.report-data div { display: flex; justify-content: space-between; padding: 4px 0; border-bottom: 1px dotted #cbd5e1; font-size: 14px; }
+.report-label { font-weight: 500; color: #475569; }
+.report-value { font-weight: 700; }
+.report-material-table { width: 100%; border-collapse: collapse; margin-top: 10px; }
+.report-material-table th, .report-material-table td { border: 1px solid #e2e8f0; padding: 8px; text-align: left; font-size: 13px; }
+.report-material-table th { background-color: #f1f5f9; color: #1e293b; }
